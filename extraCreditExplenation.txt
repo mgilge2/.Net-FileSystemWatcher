@@ -1,0 +1,23 @@
+Some of the things that I did on this project that are extra:
+
+* Added 2 additional queries to the database form.  
+
+* I also made it so it is possible to run any combination of these queries together and get combined query results.
+
+* Added a handler so that if the user types in a directory and then hits enter, the watcher will start (aka it acts the same as if you hit the start button)
+
+* All SQL statements make sure to avoid injection.
+
+* Queued SQL commands up and executed once, improved speed of write to database.
+
+* If a user enters an invalid directory, the Directory to Monitor label is changed to red and tells the user the directory is invalid.  If its valid it changes to green and indicates the watcher is running.  Upon hitting stop it will change back to the starting Directory to Monitor in black.
+
+* Organized all of my data in both forms in a datagridview, and made the view so it is sortable by columns
+
+* I added a clear button to the main form that allows the user to clear out what is currently in the datagridview, I also did the same thing in the DB form, meaning you can both clear the database itself, or just the query results being displayed in the current form are cleared (and the database is left untouched)
+
+* Clicking on an entry in the datatableview will open the associated entry with the default program if possible, if not it will open the program chooser dialog. This works for both the main filewatcher datagridview, as well as for the Database query datagridview.
+
+* this is just good design, or not depending, but I did resize the elements on resizing the app, and it just was bad from a functional standpoint...ie making it small was pointless.  As such I fixed the resizing so that the program runs in the resolution it was designed in.
+
+* Clicking on Cartmen's picture in my about box will play a soundclip (easter egg!)
